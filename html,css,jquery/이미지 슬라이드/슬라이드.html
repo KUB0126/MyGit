@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.div2').hide();
+            $('#two').click(function(){
+                $('.div2').show();
+                $('.div1').hide();
+            });
+            $('#one').click(function(){
+                $('.div1').show();
+                $('.div2').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="show1">
+        <h1 id="one">1</h1>
+        <span class="div1">첫 번째 DIV</span>
+    </div>
+    <div class="show2">
+        <h1 id="two">2</h1>
+        <span class="div2">두 번째 Div</span>
+    </div>
+    
+</body>
+</html>

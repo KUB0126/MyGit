@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title></title>
+    <script>
+        $(document).ready(function () {
+            $('.wm_img').hide();
+            $('#wm').click(function () {
+                $('.mg_img').hide();
+                $('.wm_img').show();
+            });
+            $('#mg').click(function () {
+                $('.wm_img').hide();
+                $('.mg_img').show();
+            });
+
+        });
+    </script>
+    <style>
+        #mg, #wm{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li id="mg">망고</li>
+                <li id="wm">수박</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mg_img"><img src="img/망고.png"></div>
+    <div class="wm_img"><img src="img/수박.jpg"></div>
+</body>
+</html>
